@@ -2,6 +2,8 @@ import Search from './Search.js';
 import VideoPlayer from './VideoPlayer.js';
 import VideoList from './VideoList.js';
 
+import exampleVideoData from '../data/exampleVideoData.js';
+
 var App = () => (
   <div>
     <nav className="navbar">
