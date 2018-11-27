@@ -2,11 +2,9 @@ import VideoListEntry from './VideoListEntry.js';
 
 var VideoList = (props) => (
   <div className="video-list">
-    <VideoListEntry/>
-    <VideoListEntry/>
-    <VideoListEntry/>
-    <VideoListEntry/>
-    <VideoListEntry/>
+    {props.videos.map(item => (
+      <VideoListEntry video = {item} />
+    ))}
   </div>
 );
 
