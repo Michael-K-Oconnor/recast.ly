@@ -16,6 +16,7 @@ class App extends React.Component {
     };
 
     this.videoSelected = this.videoSelected.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   videoSelected(video) {
@@ -24,12 +25,29 @@ class App extends React.Component {
     });
   }
 
+  handleInput(e){
+
+  }
+  
+  handleSubmit(e){
+    console.log(e);
+    //get string 
+
+    //create Options 
+    //Get request Youtube API
+    //update State 
+  }
+
+
+
+
+
   render() {
     return (
       <div>
         <nav className="navbar">
           <div className="col-md-6 offset-md-3">
-            <Search />>
+            <Search handleSubmit={this.handleSubmit}/>
           </div>
         </nav>
         <div className="row">

@@ -1,5 +1,3 @@
-
-
 var searchYouTube = (options, callback) => {
 
   $.get({
